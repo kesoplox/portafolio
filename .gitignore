@@ -1,0 +1,15 @@
+# Ignorar carpetas externas
+../
+../../
+../../../
+../../../../
+
+# Ignorar archivos del sistema
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+*.code-workspace
