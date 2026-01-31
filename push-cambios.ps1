@@ -5,13 +5,9 @@ cd "c:\Users\MINEDUCYT\Desktop\Kevin León web\ProyectoPersonal\mi portafolio"
 Write-Host "[*] Estado del repositorio:" -ForegroundColor Cyan
 git status
 
-# Pedir mensaje
-$mensaje = Read-Host "Escribe el mensaje del commit"
-
-if ([string]::IsNullOrWhiteSpace($mensaje)) {
-    $fecha = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
-    $mensaje = "Cambios actualizados $fecha"
-}
+# Generar mensaje automático con fecha
+$fecha = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+$mensaje = "Cambios actualizados $fecha"
 
 # Hacer commit
 Write-Host "[*] Realizando commit..." -ForegroundColor Yellow
